@@ -88,7 +88,11 @@ export default function Contact() {
           <div className="Contact-informations">
             <WebIcon sx={{ color: "salmon", fontSize: "40px" }} />
             <h2>Website</h2>
-            <h3>thiswebsite.com</h3>
+            <h3>
+              <a href="https://anshmondal.netlify.app/" target="_blank">
+                https://anshmondal.netlify.app/
+              </a>
+            </h3>
           </div>
         </div>
         <div className="Contact-sendMail">
@@ -161,6 +165,8 @@ export default function Contact() {
                     },
                     "5Z_eSsMNmETzCY3aX"
                   );
+                  alert("message sent");
+                  window.location.reload();
                 }}
               >
                 Send

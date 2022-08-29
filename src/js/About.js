@@ -28,7 +28,10 @@ export default function About() {
             <span>Birthday:</span> 1st October 2001
           </p>
           <p>
-            <span>Website:</span> www.something.com
+            <span>Website:</span>{" "}
+            <a href="https://anshmondal.netlify.app/" target="_blank">
+              anshmondal.netlify.app
+            </a>
           </p>
           <p>
             <span>Degree:</span> BTech CSE
