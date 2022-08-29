@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+html{
+  scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #ede0df;
+} 
+.headPage{
+  display: grid;
+  grid-template-columns:  70% 30%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sections ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+  padding-left: 0rem;
+}
+.sections ul li{
+  display: flex;
+  text-decoration: none;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+.navbar2{
+  display: none;
+}
+.navbar{
+  margin-top: -10px;
+  margin-left: -10px;
+  background-color: #d1c9c9; 
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  position: fixed;
+  /* background-color: wheat; */
+  height: 100%;
+  width: 17%;
+  border-right: 1px solid rgba(0, 0, 0, 0.31);
+}
+.sections ul li Button{
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.171);
+  border-radius: 0px;
+}
+
+.coverInfo{
+  margin-left: 17rem;
+}
+
+.heading1{
+  margin: 2rem;
+  margin-top: 20%;
+  font-size: 2rem;
+  
+}
+.heading1 span{
+  font-style: italic;
+  color: orangered;
+}
+.skills{
+  color: rgb(176, 47, 0);
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+.para1{
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+.moreAbt Button{
+  margin: 2rem;
+  padding: 1rem;
+  background-color: salmon;
+  border: 2px salmon;
   color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.201);
+} 
+.moreAbt Button:hover{
+  color: rgba(0, 0, 0, 0.582);
+  background-color: rgba(255, 112, 96, 0.712);
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.201);
 }
 
-.App-link {
-  color: #61dafb;
+.Pic img{
+  margin: 2rem;
+  margin-top: 30%;
+  height: 25rem;
+  width: 20rem;
+  /* border: 10px solid salmon; */
+  
+}
+.brdr1{
+  position: absolute;
+  margin: 30px -376px;
+  height: 30rem;
+  width: 20rem;
+
+}
+.brdr2{
+  position: absolute;
+  margin: 165px -326px;
+  height: 30rem;
+  width: 20rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* .hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bars{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+@media(max-width:1300px){
+  .Pic svg{ 
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media(max-width:768px){
+  .hamburger{
+    display: block;
+
+  }
+  .hamburger.active .bars :nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bars :nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bars :nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .sections ul{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #d1c9c9;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .sections li{
+    margin: 16px;
+  }
+  .sections.active{
+    left: 0;
+
+  } */
+/* } */
+@media(max-width:1300px){
+  .Pic svg{ 
+    display: none;
+  }
+}
+@media(max-width:800px){
+  .App{
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 20rem;
+  }
+  .headPage{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto ;
+  }
+  .Pic svg{
+    display: none;
+  }
+
+
+  .navbar{
+    display: none;
+  }
+
+
+  .coverInfo{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 1rem;
+    height: 90vh;
+    width: 90vw;
+    gap: 0;
+  }
+  .skills{
+    font-size: 1.5rem;
+    height: 2rem;
+    margin: 3rem;
+    text-align: center;
+  }
+  .para1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .heading1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .Pic img{
+    position: absolute;
+    margin: 1rem;
+    border-radius: 50%;
+    margin-top: -75vh;
+    margin-left: 10vw;
+    opacity: 40%;
+    align-self: center;
+  }
+  .navbar2{
+    margin-top: -10px;
+    margin-left: -10px;
+  /* background-color: #d1c9c9;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* background-color: wheat; */
+  height: 100vh;
+  width: 10%;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.31); */
+  }
+  .navbar2 Button{
+    margin-left: -2.5rem;
+    opacity: 50%;
+  }
+  .navbar2 ul{
+    background-color: salmon;
+    opacity: 50%;
+    width: 2.8rem;
+    border-radius: 0px 20px 20px 0px;
   }
 }

@@ -1,0 +1,121 @@
+.Contact-container{
+    margin-top: 5rem;
+    padding-top: 0.2rem;
+    margin-left: 19rem;
+    height: 100vh;
+    overflow: auto;
+}
+.Contact-heading{
+    display: grid;
+}
+.Contact-heading h1{
+    margin-top: 1.5rem;
+    color: salmon;
+    font-size: 3rem;
+    text-decoration: underline;
+    /* color: aquamarine; */
+}
+.Contact-subhead{
+    color: rgb(176, 47, 0);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0rem;
+}
+.Contact-subhead2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.Contact-body{
+    margin: 1rem;
+    display: grid;
+}
+.Contact-info{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+}
+.Contact-informations{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.Contact-sendMail{
+    margin: 1rem;
+    margin-top: 3rem;
+}
+.mail-heading h1{
+    color: rgb(176, 47, 0);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0rem;
+}
+.mail-heading h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.Message-writing{
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+}
+.Contact-boxes fieldset{
+    border: 2px solid salmon;
+    border-radius: 40px;
+    /* background-color: rgb(255, 188, 180); */
+}
+.Contact-boxes:hover fieldset{
+    border: 2px solid salmon;
+}
+#Name-box{
+    width: 30vw;
+}
+#Email-box{
+    width: 30vw;
+}
+#Subject-box{
+    width: 58vw;
+}
+#Message-box{
+    height: 20vh;
+    width: 60vw;
+}
+.Send-button{
+    text-align: center;
+    margin: 2rem;
+}
+.Send-button Button{
+    border: 2px solid salmon;
+    background-color: salmon;
+    border-radius: 40px;
+    height: 8vh;
+    width: 8vw;
+    font-size: 1.2rem;
+}
+.Send-button Button:hover {
+    background-color: rgb(250, 149, 138);
+}
+
+@media(max-width:800px){
+    .Contact-container{
+        margin: 1rem;
+        width: 95vw;
+    }
+    .Contact-heading{
+        margin: 1rem;
+        text-align: center;
+    }
+    .Contact-info{
+        display: grid;
+        grid-template-columns: 80vw;
+        grid-template-rows: auto auto auto auto;
+    }
+    .Send-button Button{
+        width: 28vw;
+    }
+}

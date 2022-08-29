@@ -1,0 +1,182 @@
+.heading{
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    color: salmon;
+    font-size: 3rem;
+    margin-left: 19rem;
+    text-decoration: underline;
+    padding-top: 3rem;
+}
+.subhead{
+    /* margin: auto; */
+    margin-top: 2rem;
+    margin-left: 19rem;
+    font-size: 2rem;
+    
+}
+.subhead span{
+    color: rgb(250, 103, 87);
+}
+
+.AbtPara{
+    margin-top: 2rem;
+    margin-left: 19rem;
+    font-size: 1.5rem;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-left: 19rem;
+}
+.Pinfo1{
+    /* margin: 1rem; */
+    font-size: 1.3rem;
+}
+.Pinfo1 p{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.351);
+    width: fit-content;
+    padding-bottom: 0.8rem;
+    /* font-weight: bold; */
+}
+.Pinfo1 p span{
+    font-weight: bold;
+}
+
+.Pinfo2{
+    /* margin: 1rem; */
+    font-size: 1.3rem;
+}
+.Pinfo2 p{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.351);
+    width: fit-content;
+    padding-bottom: 0.8rem;
+    /* font-weight: bold; */
+}
+.Pinfo2 p span{
+    font-weight: bold;
+}
+/* .bars{
+    width: 20rem;
+    margin: 1rem;
+} */
+.bars h3{
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 1rem;
+}
+.one{
+    background-color: lightgrey;
+    width: 100%;
+    height: 20px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 3px rgb(58, 58, 58);
+    
+}
+.one-one{
+    background-color: salmon;
+    color: white;
+    height: 20px;
+    width: 90%;
+    border-radius: 25px;
+    /* margin-bottom: 25px; */
+}
+.one-two{
+    background-color: salmon;
+    color: white;
+    height: 20px;
+    width: 85%;
+    border-radius: 25px;
+    /* margin-bottom: 55px; */
+}
+.one-three{
+    background-color: salmon;
+    color: white;
+    height: 20px;
+    width: 70%;
+    border-radius: 25px;
+    /* margin-bottom: 25px; */
+}
+.one-four{
+    background-color: salmon;
+    color: white;
+    height: 20px;
+    width: 80%;
+    border-radius: 25px;
+    /* margin-bottom: 25px; */
+}
+.one-one span{
+    margin-left: 20px;
+}
+.one-two span{
+    margin-left: 20px;
+}
+.one-three span{
+    margin-left: 20px;
+}
+.one-four span{
+    margin-left: 20px;
+}
+
+.btns{
+    margin-top: 2rem;
+    
+}
+.btns Button{
+    margin-right: 3rem;
+    padding: 1rem;
+    background-color: salmon;
+    border: 2px salmon;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.201);
+}
+.btns Button:hover{
+    color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(255, 112, 96, 0.712);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.201);
+} 
+.btns a{
+    text-decoration: none;
+}
+
+@media(max-width:800px){
+    .About{
+        height: 100vh;
+        margin-bottom: 20rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin-left: 1.5rem;
+    }
+    .heading{
+        text-align: center;
+        margin: 1rem;
+    }
+    .subhead{
+        text-align: center;
+        margin: 1rem;
+    }
+    .AbtPara{
+        text-align: center;
+        margin: 1rem;
+    }
+    .info{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        margin: 1rem;
+    }
+    .btns{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .btns Button{
+        margin: 0.5rem;
+        width: 30vw;
+        height: 8vh;
+    }
+}
