@@ -29,7 +29,7 @@ export default function About() {
           </p>
           <p>
             <span>Website:</span>{" "}
-            <a href="https://anshmondal.netlify.app/" target="_blank">
+            <a href="https://anshmondal.netlify.app/" target="blank">
               anshmondal.netlify.app
             </a>
           </p>

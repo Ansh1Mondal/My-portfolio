@@ -89,7 +89,7 @@ export default function Contact() {
             <WebIcon sx={{ color: "salmon", fontSize: "40px" }} />
             <h2>Website</h2>
             <h3>
-              <a href="https://anshmondal.netlify.app/" target="_blank">
+              <a href="https://anshmondal.netlify.app/" target="blank">
                 https://anshmondal.netlify.app/
               </a>
             </h3>
